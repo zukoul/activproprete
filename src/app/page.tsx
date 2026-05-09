@@ -361,7 +361,8 @@ export default function Home() {
             {[
               {
                 name: "FORMULE ESSENTIEL",
-                price: "25 000",
+                price: "85 000",
+                hourly: "5 000",
                 highlighted: false,
                 features: [
                   "Dépoussiérage de toutes les surfaces",
@@ -374,7 +375,8 @@ export default function Home() {
               },
               {
                 name: "FORMULE ENTREPRISE",
-                price: "50 000",
+                price: "120 000",
+                hourly: "6 500",
                 highlighted: true,
                 features: [
                   "Tout l'Essentiel inclus",
@@ -387,11 +389,11 @@ export default function Home() {
               },
               {
                 name: "FORMULE PREMIUM",
-                price: "100 000",
+                price: "150 000",
+                hourly: "7 500",
                 highlighted: false,
                 features: [
                   "Tout l'Entreprise inclus",
-                  "Grand ménage de printemps",
                   "Recommandé pour résidences haut de gamme",
                   "Organisation placards et rangements",
                   "Détachage canapés et tapis",
@@ -423,6 +425,13 @@ export default function Home() {
                   >
                     FCFA / mois
                   </div>
+                </div>
+                <div
+                  className={`mt-1 text-sm ${
+                    p.highlighted ? "text-white/70" : "text-slate-500"
+                  }`}
+                >
+                  ou {p.hourly} FCFA / heure
                 </div>
                 <ul
                   className={`mt-6 space-y-3 text-sm ${
@@ -602,9 +611,19 @@ export default function Home() {
                   ),
                 },
                 {
+                  label: "Secrétariat",
+                  value: "+225 01 70 60 42 57",
+                  href: "tel:+2250170604257",
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.1-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.5c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z" />
+                    </svg>
+                  ),
+                },
+                {
                   label: "Email",
-                  value: "contact@activproprete.ci",
-                  href: "mailto:contact@activproprete.ci",
+                  value: "contact@activproprete.com",
+                  href: "mailto:contact@activproprete.com",
                   icon: (
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4 4h16c1 0 2 1 2 2v12c0 1-1 2-2 2H4c-1 0-2-1-2-2V6c0-1 1-2 2-2z" />
