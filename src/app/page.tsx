@@ -72,8 +72,9 @@ export default function Home() {
           <nav className="hidden items-center gap-8 text-sm font-medium text-slate-700 md:flex">
             <a href="#" className="text-brand">Accueil</a>
             <a href="#services" className="hover:text-brand">Services</a>
+            <a href="/produits" className="hover:text-brand">Produits</a>
+            <a href="/formation" className="hover:text-brand">Formation</a>
             <a href="#equipe" className="hover:text-brand">Équipe</a>
-            <a href="#blog" className="hover:text-brand">Blog</a>
             <a href="#contact" className="hover:text-brand">Contact</a>
           </nav>
           <a
@@ -250,7 +251,7 @@ export default function Home() {
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {[
-            { name: "Aïcha Koffi", role: "Superviseure", img: IMG.team1 },
+            { name: "Koffi Armelle", role: "Superviseure", img: IMG.team1 },
             { name: "Awa Diabaté", role: "Cheffe d'équipe", img: IMG.team2 },
             { name: "Fatou Diallo", role: "Agente senior", img: IMG.team3 },
           ].map((m, i) => (
@@ -301,6 +302,7 @@ export default function Home() {
               <br /> Activ&rsquo;propreté !
             </h2>
             <p className="mt-5 max-w-md text-sm text-slate-600">
+              Activ&rsquo;propreté est une activité du groupe <strong>Agiref</strong>.
               Basée à Yamoussoukro, notre entreprise met son expertise au service
               des particuliers comme des professionnels. Satisfaction garantie.
             </p>
@@ -723,6 +725,8 @@ export default function Home() {
               <ul className="mt-4 space-y-2 text-sm">
                 <li><a href="#contact" className="hover:text-white">À propos</a></li>
                 <li><a href="#services" className="hover:text-white">Services</a></li>
+                <li><a href="/produits" className="hover:text-white">Produits</a></li>
+                <li><a href="/formation" className="hover:text-white">Formation</a></li>
                 <li><a href="#equipe" className="hover:text-white">Notre équipe</a></li>
               </ul>
             </div>
